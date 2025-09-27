@@ -102,6 +102,7 @@ header nav {
 
 #hero {
     margin-top: 200px;
+    position: relative !important;
 }
 
 .swiper {
@@ -137,14 +138,16 @@ header nav {
     border: none;
     border-radius: 5px;
 }
+.picslideleft{
+    transform: translateY(-250px);
+}
 .mainshow{
-    /* position: relative; */
     display: flex;
     width: 500px;
     justify-content: center;
     height: 150px;
     align-items: center;
-    transform: translateY(-100px);
+    transform: translate(100px,-430px);
     gap: 20px;
     margin-left: 150px;
 }
@@ -155,7 +158,6 @@ header nav {
     
 }
 .mainshow1{
-    /* position: absolute; */
     display: flex;
     background-color: rgba(47, 76, 221, 0.1);
     align-items: center;
@@ -164,9 +166,8 @@ header nav {
     height: 130px;
     justify-content: center;
     align-items: center;
-
-    
 }
+
 .mainshow1text{
     width: 150px;
     line-height: 20px;
@@ -178,9 +179,7 @@ header nav {
     padding-bottom: 12px;
 }
 .mainshow2{
-    /* position: absolute; */
     display: flex;
-    /* transform: translateX(calc(100% + 30px)); */
 }
 .swiper-item-text {
     max-width: 50%;
@@ -236,11 +235,6 @@ header nav {
 }
 
 
-
-#hero {
-    position: relative !important;
-}
-
 .swiper-pagination-bullet{
     opacity: .5 !important;
     background: none !important;
@@ -267,4 +261,25 @@ header nav {
     font-weight: 600;
     font-size: 1.5rem;
     color: #2f4cdd;
+}
+.main2{
+    position: relative;
+    font-size: 14px;
+    transform: translateY(-350px);
+}
+.main2heading{
+    text-align: center;
+    line-height: 60px;
+    max-width: 500px;
+    
+}
+.main2heading p{
+    color: #2f4cdd;
+    letter-spacing: 2px;
+    font-weight: 400;
+    
+}
+.main2heading h2{
+   font-size: 50px;
+   margin-top: -10px;
 }
