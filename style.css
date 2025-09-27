@@ -103,6 +103,7 @@ header nav {
 #hero {
     margin-top: 200px;
     position: relative !important;
+    left: -50px;
 }
 
 .swiper {
@@ -139,17 +140,21 @@ header nav {
     border-radius: 5px;
 }
 .picslideleft{
-    transform: translateY(-250px);
+    position: absolute;
+    transform: translate(-30px,-180px);
+    z-index: 999;
 }
 .mainshow{
+    position: absolute;
+    top: 91vh;
+    left: 50px;
     display: flex;
     width: 500px;
     justify-content: center;
     height: 150px;
     align-items: center;
-    transform: translate(100px,-430px);
     gap: 20px;
-    margin-left: 150px;
+    margin-left: 155px;
 }
 .mainshow img{
     height: 80px;
@@ -237,7 +242,7 @@ header nav {
 
 .swiper-pagination-bullet{
     opacity: .5 !important;
-    background: none !important;
+    background: none !important;    
 }
 
 .swiper-pagination-bullet-active{
@@ -247,12 +252,12 @@ header nav {
 .swiper-pagination {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
     width: auto;
     position: absolute !important;
     top: 20% !important;
     transform: translateY(-50%);
-    left: 20px !important;
+    left: 70px !important;
 }
 
 .swiper-pagination span {
@@ -262,18 +267,27 @@ header nav {
     font-size: 1.5rem;
     color: #2f4cdd;
 }
-.main2{
-    position: relative;
-    font-size: 14px;
-    transform: translateY(-350px);
+.main2text{
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+    
 }
 .main2heading{
+    display: block;
     text-align: center;
     line-height: 60px;
     max-width: 500px;
+    justify-content: center;
     
 }
 .main2heading p{
+    width: 100%;
     color: #2f4cdd;
     letter-spacing: 2px;
     font-weight: 400;
@@ -282,4 +296,57 @@ header nav {
 .main2heading h2{
    font-size: 50px;
    margin-top: -10px;
+}
+.main2hover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 310px;
+    width: 1250px;
+    text-align: center;
+}
+.main2hover .mainhover1 {
+    display: block;
+    width: calc(100% / 3 - 20px);
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    line-height: 20px;
+    padding: 50px;
+    transition: 0.5s linear;
+    font-size: 1.1rem;
+    line-height: 25px;
+    
+}
+.mainhover1 h4{
+    padding-block: 10px;
+}
+.mainhover1:hover{
+    background-color: white;
+}
+.main3{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    margin-top: 150px;
+    width: 1250px;
+    justify-content: center;
+    align-items: center;
+}
+.main3 img{
+    width: 500px;
+    height: 643px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: white;
+}
+.main3def{
+    width: calc(100% / 2 - 20px);
+}
+.main3 .main3right{
+    position: absolute;
+    right: -260px;
+    transform: scale(0.6,0.9);
+    top: 20px;
+    background-color: rgb(242, 240, 237);
 }
