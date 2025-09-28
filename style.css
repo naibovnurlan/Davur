@@ -8,7 +8,7 @@
 body{
     background-color: rgb(242, 240, 237);
     overflow-x: hidden;
-    height: 100vw;
+    height: 100vh;
 }
 .fa-star{
     color: #2f4cdd;
@@ -471,3 +471,95 @@ header nav {
 .main4hover .main2hover .mainhover1:hover {
     transform: translateY(-10px);
 }
+.main5{
+    position: relative;
+    margin-top: 200px;
+}
+.main5 h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.main5 p{
+    font-size: 20px;
+    margin-bottom: 50px;
+    line-height: 35px;
+}
+.main5 button{
+    padding: 12px 25px;
+    background-color: #2f4cdd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.main5 img{
+    border-radius: 50%;
+    border: 10px solid white;
+    transform: rotateZ(720deg);
+    animation-name: pizza1;
+    animation-duration: 200s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+@keyframes pizza1{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.main5-top{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.main5-toptext{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 300px;
+}
+.contcent{
+    flex: 1;
+    width: calc(100% / 2);
+}
+
+.broko{
+    position: absolute;
+    right: -50px;
+    top: 3000px;
+    transform: scale(0.8);
+}
+.svgleft2{
+    position: absolute;
+    top: -50px;
+    left: -150px;
+}
+.main5-center{
+    top: 400px;
+    left: 0;
+}
+.svgrigth1{
+    width: 800px;
+    height: 448px;
+    position: absolute;
+    transform: scale(-1);
+    transform: rotateY(180deg);
+    right: -200px;
+    top: 400px;
+    z-index: -2;
+}
+.svgleft3{
+    top: 770px;
+    left: -100px;
+}
+.mgmain5{
+    transform: translateX(100px);
+}
+.main5-end{
+    top: 800px;
+}
+
+
