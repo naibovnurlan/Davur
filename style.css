@@ -474,6 +474,7 @@ header nav {
 .main5{
     position: relative;
     margin-top: 200px;
+    height: 150vh;
 }
 .main5 h2{
     font-size: 50px;
@@ -492,9 +493,12 @@ header nav {
     border-radius: 5px;
 }
 .main5 img{
+    width: 400px;
+    padding: 0px;
+    margin: 0px;
     border-radius: 50%;
-    border: 10px solid white;
-    transform: rotateZ(720deg);
+    border: 20px solid white;
+    border-style: none;
     animation-name: pizza1;
     animation-duration: 200s;
     animation-iteration-count: infinite;
@@ -515,6 +519,7 @@ header nav {
     display: flex;
     align-items: center;
     gap: 60px;
+    justify-content: space-between;
 }
 .main5-toptext{
     padding-left: 50px;
@@ -534,32 +539,254 @@ header nav {
 }
 .svgleft2{
     position: absolute;
-    top: -50px;
-    left: -150px;
+    top: 3010px;
+    left: 0px;
 }
 .main5-center{
     top: 400px;
     left: 0;
 }
-.svgrigth1{
-    width: 800px;
-    height: 448px;
+.svgrigth2{
     position: absolute;
+    width: 700px;
+    height: 491px;
     transform: scale(-1);
     transform: rotateY(180deg);
-    right: -200px;
-    top: 400px;
-    z-index: -2;
+    right: 0px;
+    top: 3400px;
 }
 .svgleft3{
-    top: 770px;
-    left: -100px;
+    top: 3800px;
+    left: 0px;
 }
 .mgmain5{
     transform: translateX(100px);
 }
 .main5-end{
     top: 800px;
+}
+.section-7 {
+  padding-top: 300px;
+}
+.menu_cart {
+  display: flex;
+
+  gap: 0 30px;
+}
+.menu_cart .oreo {
+  overflow: hidden;
+  position: relative;
+  width: calc(100% / 4);
+  height: 400px;
+  background-image: url(https://davur-site.vercel.app/assets/images/gallery/pic5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.1);
+  transition: 2s;
+}
+.menu_cart .oreo:hover .shake {
+  opacity: 0;
+  transform: translateY(145px);
+}
+.top_seller {
+  position: absolute;
+  background-color: #2f4cdd;
+  color: white;
+  padding: 8px 7px;
+  font-size: 12px;
+  font-weight: 600;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.menu_cart .oreo .shake {
+  padding-block: 30px;
+  width: 100%;
+  text-align: center;
+  height: 144px;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.7s;
+}
+.menu_cart .shake h5 {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #182255;
+  font-size: 20px;
+  font-weight: 600;
+}
+.menu_cart .shake p {
+  color: #7a81a6;
+}
+.oreo .shake_hover {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 30px;
+  transform: translateY(69px);
+  transition: 0.7s;
+  opacity: 0;
+}
+.oreo:hover .shake_hover {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.oreo .shake_hover a:first-child {
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.oreo .shake_hover span {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+.oreo .shake_hover a:last-child {
+  overflow: hidden;
+  position: absolute;
+  left: 220px;
+  bottom: 25px;
+  display: inline-block;
+  padding: 7px 10px;
+  color: white;
+  background-color: #2f4cdd;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.oreo .shake_hover a:last-child i {
+  font-size: 16px;
+}
+.oreo .shake_hover a:last-child:hover i {
+  animation: basket 1s alternate ease;
+}
+@keyframes basket {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(35px);
+  }
+}
+
+/* section - 8 */
+
+.clients{
+  text-align: center;
+}
+.clients   p {
+  color: #2f4cdd;
+  font-size: 14px;
+  font-weight: 500;
+}
+.clients h2 {
+  color: #18214f;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.mint{
+  display: flex;
+}
+.mint img{
+  border-radius: 10px;
+}
+.mint .variations{
+  padding-top: 50px;
+  padding-left: 24px;
+}
+.mint .variations p{
+  color: #18214F;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.mint .variations .carry{
+  position: relative;
+  margin-top: 40px;
+  padding-left: 10px;
+}
+.mint .variations .carry::after{
+  content: "";
+  background-color: #2F4CDD;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 50px;
+  border-radius: 10px;
+
+}
+.mint .variations .carry h5{
+  color: #18214F;
+  font-size: 22px;
+  font-weight: 700;
+}
+.mint .variations .carry span{
+  display: inline-block;
+  margin-top: 7px;
+  color: #2F4CDD;
+  font-size: 14px;
+}
+.mint .variations .carry img{
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 150px;
+}
+/* footer */
+.footer{
+  padding-top: 75px;
+  margin-top: 100px;
+  background-color: #18214F;
+}
+.subscribe{
+  border-bottom: 1px solid #2D355E;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+ .subscribe div:first-child p{
+  margin-top: 10px;
+  color: #808BC5;
+  font-size: 14px;
+  font-weight: 500;
+}
+.subscribe div:last-child{
+  
+}
+.subscribe div:last-child h4{
+  margin-bottom: 15px;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+.subscribe div form input{
+  border-radius: 5px;
+  padding: 20px 25px;
+  width: 500px; 
+  border: none;
+}
+.subscribe div form button{
+  transform: translateX(-140px);
+  background-color: #2F4CDD;
+  padding: 15px 24px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.section-7 .main4left{
+    padding-bottom: 30px;
+}
+.section8{
+    padding-top: 100px;
 }
 
 
